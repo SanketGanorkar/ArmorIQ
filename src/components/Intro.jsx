@@ -38,9 +38,7 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%]">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-[#004bae] font-bold">
-            WE ARE REACTIVE
-          </h2>
+          <h2 className="text-[#004bae] font-bold">WE ARE REACTIVE</h2>
           <h2 className="text-white font-bold text-3xl max-sm:text-4xl">
             CYBER SECURITY
             <br />
@@ -56,29 +54,41 @@ const Intro = () => {
               LEARN MORE
             </button>
             <div className="flex sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
-              <h2 className="text-[#004bae] font-bold pb-0">Call us</h2>
-              <h2 className="text-white">+91 9302864102</h2>
+              <h2 className="text-[#004bae] font-bold pb-0 pl-2">Call us</h2>
+              <h2 className="text-white -ml-6">+91 9302864102</h2>
             </div>
           </div>
         </div>
         {/* Right Section */}
         <div className="flex">
-            <div className="flex flex-col text-right">
-              <div className="flex flex-col mt-[120px]">
-                  <h2 className="text-white font-bold text-5xl max-sm:text-3xl">2500 +</h2>
-                  <h2 className="text-white font-bold pt-3">Cyber Security Project</h2>
-                  <p className="text-white ">Lorem ipsum dolor sit amet, consectetur 
-                    <br />
-                    adipisicing elit. Est, reprehenderit.</p>
-              </div>
-              <div className="flex flex-col">
-                  <h2 className="text-white font-bold text-3xl pt-5 pl-[75px]">100 %</h2>
-                  <h2 className="text-white font-bold pl-[50px]">Service Guarantee</h2>
-                  <p className="text-white pl-3">Lorem ipsum dolor sit amet, consectetur 
-                    <br />
-                    adipisicing elit. Est, reprehenderit.</p>
-              </div>
+          <div className="flex flex-col text-right">
+            <div className="flex flex-col mt-[120px]">
+              <h2 className="text-white font-bold text-5xl max-sm:text-3xl">
+                2500 +
+              </h2>
+              <h2 className="text-white font-bold pt-3">
+                Cyber Security Project
+              </h2>
+              <p className="text-white ">
+                Lorem ipsum dolor sit amet, consectetur
+                <br />
+                adipisicing elit. Est, reprehenderit.
+              </p>
             </div>
+            <div className="flex flex-col">
+              <h2 className="text-white font-bold text-3xl pt-5 pl-[75px]">
+                100 %
+              </h2>
+              <h2 className="text-white font-bold pl-[50px]">
+                Service Guarantee
+              </h2>
+              <p className="text-white pl-3">
+                Lorem ipsum dolor sit amet, consectetur
+                <br />
+                adipisicing elit. Est, reprehenderit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

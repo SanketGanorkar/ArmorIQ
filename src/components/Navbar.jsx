@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../assets/Company.jpg"; 
+import logo from "../assets/Company.png"; 
 
 const Navbar = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center max-sm:justify-end px-4">
-        <img src={logo} alt="Company Logo" className="ml-0 mr-auto sm:ml-0 h-12" />
+        <img src={logo} alt="Company Logo" className="ml-0 mr-auto sm:ml-0 h-[80px]" />
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
           <li className="mr-6 mb-3 font-bold">HOME</li>
           <li className="mr-6 mb-3 font-bold">ABOUT US</li>

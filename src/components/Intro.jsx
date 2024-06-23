@@ -1,4 +1,3 @@
-import tech from "../assets/tech.jpg";
 import { MdOutlineSecurity } from "react-icons/md";
 
 const Intro = () => {
@@ -30,11 +29,7 @@ const Intro = () => {
   ];
 
   return (
-    <div
-      className="bg-cover bg-center flex flex-col"
-      style={{ backgroundImage: `url(${tech})` }}
-    >
-      {/* Main Section */}
+    <div className="bg-tech bg-cover bg-center flex flex-col">
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%]">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
@@ -49,13 +44,13 @@ const Intro = () => {
             <br />
             adipisicing elit. Fugiat iure explicabo aut.
           </p>
-          <div className="flex flex-row mt-9 max-sm:flex-col">
+          <div className="flex flex-col mt-9 sm:flex-row">
             <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer">
               LEARN MORE
             </button>
-            <div className="flex sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
-              <h2 className="text-[#004bae] font-bold pb-0 pl-2">Call us</h2>
-              <h2 className="text-white -ml-6">+91 9302864102</h2>
+            <div className="flex flex-row sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
+              <h2 className="text-[#004bae] font-bold pb-0">Call us</h2>
+              <h2 className="text-white">+91 9302864102</h2>
             </div>
           </div>
         </div>
@@ -69,7 +64,7 @@ const Intro = () => {
               <h2 className="text-white font-bold pt-3">
                 Cyber Security Project
               </h2>
-              <p className="text-white ">
+              <p className="text-white">
                 Lorem ipsum dolor sit amet, consectetur
                 <br />
                 adipisicing elit. Est, reprehenderit.
@@ -110,5 +105,4 @@ const Intro = () => {
     </div>
   );
 };
-
 export default Intro;

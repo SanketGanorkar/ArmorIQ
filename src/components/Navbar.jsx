@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center max-sm:justify-end px-4">
-        <img src={logo} alt="Company Logo" className="ml-0 mr-auto sm:ml-0 h-[80px]" />
+      <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center px-4">
+        <img src={logo} alt="Company Logo" className="h-[110px] ml-0 mr-auto sm:ml-0" />
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
           <li className="mr-6 mb-3 font-bold">HOME</li>
           <li className="mr-6 mb-3 font-bold">ABOUT US</li>
@@ -40,11 +40,11 @@ const Navbar = () => {
           </li>
           <li className="mr-6 mb-3 font-bold">CONTACT</li>
         </ul>
-        <FaSearch color="white" className="mr-6 mb-2 sm:block" />
+        <FaSearch color="white" className="mr-6 mb-2 sm:block sm:h-6 sm:w-6 max-sm:h-6 max-sm:w-6" />
         <IoMdMenu
           color="white"
-          size={20}
-          className="mr-3 mb-2 block sm:hidden"
+          size={25}
+          className="mr-3 mb-2 block sm:hidden max-sm:h-8 max-sm:w-8"
           onClick={() => setVisibleMenu(true)}
         />
       </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
           <RxCross2
             color="white"
             size={25}
-            className="absolute top-4 right-4"
+            className="absolute top-4 right-4 max-sm:h-8 max-sm:w-8"
             onClick={() => setVisibleMenu(false)}
           />
           <ul className="text-white absolute top-14 right-4 text-right text-2xl flex flex-col gap-4">

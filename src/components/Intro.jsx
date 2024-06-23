@@ -49,8 +49,8 @@ const Intro = () => {
               LEARN MORE
             </button>
             <div className="flex flex-row sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
-              <h2 className="text-[#004bae] font-bold pb-0">Call us</h2>
-              <h2 className="text-white">+91 9302864102</h2>
+              <h2 className="text-[#004bae] font-bold pb-0 text-[15px]">Call us</h2>
+              <h2 className="text-white text-[15px]">+91 9302864102</h2>
             </div>
           </div>
         </div>

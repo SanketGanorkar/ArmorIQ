@@ -22,7 +22,10 @@ const Contact = () => {
             <CiLocationOn color="#004bae" className="ml-3 mt-4" size={40} />
             <div className="flex flex-col">
               <h3 className=" ml-3 mt-3 font-bold text-white">Our Location</h3>
-              <h5 className="text-white ml-3">Sylnet 3000 , Singapore</h5>
+              <h5 className="text-white ml-3">Saket Salcon, Rasvilas, Saket District 
+                <br />
+                Centre, Sector 6, Pushp Vihar, 
+                <br />New Delhi, India - 110017</h5>
             </div>
           </div>
           <div className="flex flex-row">

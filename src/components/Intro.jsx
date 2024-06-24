@@ -1,30 +1,32 @@
 import { MdOutlineSecurity } from "react-icons/md";
-
+import { FaUserCog } from "react-icons/fa";
+import { MdAccessibility } from "react-icons/md";
+import { FaDollarSign } from "react-icons/fa";
 const Intro = () => {
   const arr = [
     {
       id: 1,
-      logo: <MdOutlineSecurity />,
-      title: "24/7 Support",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse expedita possimus molestiae numquam rem eligendi facilis cum voluptates aut.",
+      logo: <FaDollarSign />,
+      title: "Affordability",
+      desc: "Cost-effective cybersecurity solutions that fit within your budget constraints without compromising on quality or effectiveness.",
     },
     {
       id: 2,
-      logo: <MdOutlineSecurity />,
-      title: "24/7 Support",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse expedita possimus molestiae numquam rem eligendi facilis cum voluptates aut.",
+      logo: <MdAccessibility />,
+      title: "Accessibility",
+      desc: "Tailored solutions to meet your specific needs and ensure that essential cybersecurity measures are within reach.",
     },
     {
       id: 3,
       logo: <MdOutlineSecurity />,
-      title: "24/7 Support",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse expedita possimus molestiae numquam rem eligendi facilis cum voluptates aut.",
+      title: "Reliability",
+      desc: "We prioritize the security and protection of your digital assets, employing industry best practices and staying ahead of emerging threats to maintain a secure environment.",
     },
     {
       id: 4,
-      logo: <MdOutlineSecurity />,
-      title: "24/7 Support",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse expedita possimus molestiae numquam rem eligendi facilis cum voluptates aut.",
+      logo: <FaUserCog />,
+      title: "Tailored",
+      desc: "The personalized approach ensures that your cybersecurity measures are effective and relevant to your organization's needs.",
     },
   ];
 
@@ -33,11 +35,11 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%]">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-[#004bae] font-bold">WE ARE REACTIVE</h2>
+          <h2 className="text-[#004bae] font-bold">
+            DEMOCRATIZING CYBERSECURITY
+          </h2>
           <h2 className="text-white font-bold text-3xl max-sm:text-4xl">
-            CYBER SECURITY
-            <br />
-            SOLUTION
+            ASSESS → DEFEND → SECURE
           </h2>
           <p className="text-white mt-8">
             Lorem ipsum dolor sit amet consectetur
@@ -49,7 +51,9 @@ const Intro = () => {
               LEARN MORE
             </button>
             <div className="flex flex-row sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
-              <h2 className="text-[#004bae] font-bold pb-0 text-[15px]">Call us</h2>
+              <h2 className="text-[#004bae] font-bold pb-0 text-[15px]">
+                Call us
+              </h2>
               <h2 className="text-white text-[15px]">+91 9302864102</h2>
             </div>
           </div>
@@ -59,15 +63,19 @@ const Intro = () => {
           <div className="flex flex-col text-right">
             <div className="flex flex-col mt-[120px]">
               <h2 className="text-white font-bold text-5xl max-sm:text-3xl">
-                2500 +
+                50 +
               </h2>
               <h2 className="text-white font-bold pt-3">
                 Cyber Security Project
               </h2>
               <p className="text-white">
-                Lorem ipsum dolor sit amet, consectetur
+                Our track record reflects our commitment to delivering
                 <br />
-                adipisicing elit. Est, reprehenderit.
+                effective cybersecurity solutions tailored to the unique
+                <br />
+                needs of each client, ensuring robust protection and peace
+                <br />
+                of mind in an increasingly complex digital landscape.
               </p>
             </div>
             <div className="flex flex-col">
@@ -78,9 +86,13 @@ const Intro = () => {
                 Service Guarantee
               </h2>
               <p className="text-white pl-3">
-                Lorem ipsum dolor sit amet, consectetur
+                Our unwavering focus on quality, reliability, and proactive
                 <br />
-                adipisicing elit. Est, reprehenderit.
+                support enables us to maintain an exceptional level of
+                satisfaction and
+                <br />
+                fostering long-lasting partnerships built on trust and mutual
+                success.
               </p>
             </div>
           </div>

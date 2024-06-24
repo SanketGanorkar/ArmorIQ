@@ -78,10 +78,6 @@ const Footer = () => {
                 <IoIosMailOpen className="mt-1 mr-2" />
                 xyz@gmail.com
               </div>
-              <div className="flex flex-row font-semibold text-white">
-                <CiLocationOn className="mt-1 mr-2" />
-                Sylhnet 3100, Bangladesh
-              </div>
             </div>
           </div>
         </div>

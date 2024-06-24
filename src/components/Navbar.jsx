@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center px-4">
-        <img src={logo} alt="Company Logo" className="h-[110px] ml-0 mr-auto sm:ml-0" />
+        <img src={logo} alt="Company Logo" className="h-[130px] ml-0 mr-auto sm:ml-0" />
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
           <li className="mr-6 mb-3 font-bold">HOME</li>
           <li className="mr-6 mb-3 font-bold">ABOUT US</li>

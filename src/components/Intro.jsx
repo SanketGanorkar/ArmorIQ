@@ -20,7 +20,7 @@ const Intro = () => {
       id: 3,
       logo: <MdOutlineSecurity />,
       title: "Reliability",
-      desc: "We prioritize the security and protection of your digital assets, employing industry best practices and staying ahead of emerging threats to maintain a secure environment.",
+      desc: "We prioritize the security of your digital assets by employing industry best practices & proactively staying ahead of emerging threats to ensure reliability.",
     },
     {
       id: 4,
@@ -35,16 +35,19 @@ const Intro = () => {
       <div className="flex flex-row justify-between mx-4 sm:mx-[8%]">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-[#004bae] font-bold">
+          <h2 className="text-[#004bae] font-bold ">
             DEMOCRATIZING CYBERSECURITY
           </h2>
-          <h2 className="text-white font-bold text-3xl max-sm:text-4xl">
+          <h2 className="text-white font-bold text-3xl max-sm:text-[11px]">
             ASSESS → DEFEND → SECURE
           </h2>
           <p className="text-white mt-8">
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            adipisicing elit. Fugiat iure explicabo aut.
+          Tailored services are designed to meet the specific 
+          <br />needs of diverse clients, from small startups to large 
+          <br />enterprises. By leveraging cutting-edge technology 
+          <br />and innovative strategies, we empower you to defend 
+          <br />against threats with the same level of security as the 
+          <br />biggest players in the industry.
           </p>
           <div className="flex flex-col mt-9 sm:flex-row">
             <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer">
@@ -83,7 +86,7 @@ const Intro = () => {
                 100 %
               </h2>
               <h2 className="text-white font-bold pl-[50px]">
-                Service Guarantee
+                Customer Satisfaction
               </h2>
               <p className="text-white pl-3">
                 Our unwavering focus on quality, reliability, and proactive

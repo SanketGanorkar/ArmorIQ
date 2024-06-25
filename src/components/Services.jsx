@@ -1,90 +1,74 @@
+import React from "react";
 import { MdOutlineSecurity } from "react-icons/md";
 import logo from "../assets/logo.png";
+
 const Services = () => {
-  const arr1 = [
+  const services = [
     {
       id: 1,
       logo: <MdOutlineSecurity color="white" />,
       title: "Cloud Security",
-      desc: "Configuration Audit (AWS, Azure, Google)",
+      desc: "Lorem ipsum dolor, sit amet consectetur",
     },
     {
       id: 2,
       logo: <MdOutlineSecurity color="white" />,
       title: "Mobile Security",
-      desc: "A. Mobile Application Penetration Test B. Source Code Review",
+      desc: "Lorem ipsum dolor, sit amet consectetur",
     },
     {
       id: 3,
       logo: <MdOutlineSecurity color="white" />,
       title: "Application Security",
-      desc: "A. Application Security Testing B. Source Code Review C.Application Security Architecture Review D.Secure Software Development Lifecycle Implementation ",
-    },
-  ];
-  const arr2 = [
-    {
-      id: 1,
-      logo: <MdOutlineSecurity color="white" />,
-      title: "Network Security",
-      desc: "A. Network Vulnerability Assessment B.Network Penetration Testing C.Configuration Audit D.Network Architecture Security Review E. Wireless Penetration Testing F.Firewall Review",
-    },
-    {
-      id: 2,
-      logo: <MdOutlineSecurity color="white" />,
-      title: "Network Security",
       desc: "Lorem ipsum dolor sit amet.",
     },
     {
-      id: 3,
+      id: 4,
       logo: <MdOutlineSecurity color="white" />,
       title: "Network Security",
-      desc: "Lorem ipsum dolor sit amet.",
+      desc: "Lorem ipsum dolor, sit amet consectetur.",
+    },
+    {
+      id: 5,
+      logo: <MdOutlineSecurity color="white" />,
+      title: "Endpoint Security",
+      desc: "Lorem ipsum dolor, sit amet consectetur.",
+    },
+    {
+      id: 6,
+      logo: <MdOutlineSecurity color="white" />,
+      title: "Identity & Access Management",
+      desc: "Lorem ipsum dolor, sit amet consectetur.",
     },
   ];
 
   return (
     <div>
-      <div className="bg-[#262626] items-center flex flex-col max-md:px-2">
-        <h2 className="text-[#004bae] font-bold pt-12">SERVICES</h2>
+      <div className="bg-[#262626] flex flex-col items-center max-md:px-2 py-12">
+        <h2 className="text-[#004bae] font-bold">SERVICES</h2>
         <h2 className="text-white font-semibold text-3xl">What We Do</h2>
-        <p className="text-white pl-7 pt-3 text-center">
+        <p className="text-white pt-3 text-center">
           Enhancing Organizational Cybersecurity Through Comprehensive Services
         </p>
-        <div className="flex flex-row max-md:flex-col max-md:mt-4">
-          <div className="flex max-md:gap-[1%] md:flex-col mt-5 lg:mr-12 mb-3">
-            {arr1.map((service) => (
-              <div
-                key={service.id}
-                className="flex flex-col items-center md:mb-12"
-              >
-                {service.logo}
-                <h3 className="text-white font-semibold text-xl text-center">
-                  {service.title}
-                </h3>
-                <p className="text-white text-center">{service.desc}</p>
+        <div className="relative w-full max-w-4xl mt-8">
+          <div className="absolute left-1/2 w-0.5 bg-white h-full transform -translate-x-1/2"></div>
+          {services.map((service, index) => (
+            <div
+              key={service.id}
+              className={`relative flex flex-col items-center mb-12 w-full md:w-1/2 ${
+                index % 2 === 0 ? "ml-auto pr-4" : "mr-auto pl-4"
+              }`}
+              style={{
+                transform: index % 2 === 0 ? 'translateX(-50%)' : 'translateX(50%)'
+              }}
+            >
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                <div className="text-4xl mb-2">{service.logo}</div>
+                <h3 className="text-white font-semibold text-xl">{service.title}</h3>
+                <p className="text-white mt-2">{service.desc}</p>
               </div>
-            ))}
-          </div>
-          <div className="mr-5 ml-5 md:mt-5 max-md:flex items-center justify-center">
-            <img src={logo} className="sm:h-[330px]" />
-          </div>
-          <div className="flex max-md:gap-[1%] md:flex-col lg:ml-12 mt-5">
-            {arr2.map((service) => (
-              <div
-                key={service.id}
-                className="flex flex-col items-center mb-12"
-              >
-                {service.logo}
-                <h3 className="text-white font-semibold text-xl text-center">
-                  {service.title}
-                </h3>
-                <p className="text-white text-center">{service.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col">
-            {/* Additional content can go here */}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
       {/* Footer section */}

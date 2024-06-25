@@ -11,6 +11,11 @@ export default {
       animation: {
         bounce: 'bounce 7s infinite',
       },
+      spacing: {
+        '5': '1.25rem',
+        '10': '2.5rem',
+        '20': '5rem',
+      },
       keyframes: {
         bounce: {
           '0%, 100%': {

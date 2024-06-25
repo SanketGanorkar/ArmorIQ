@@ -9,7 +9,7 @@ export default {
         'tech': "url('/src/assets/tech.jpg')"
       },
       animation: {
-        bounce: 'bounce 7s infinite',
+        bounce: 'bounce 5s infinite',
       },
       spacing: {
         '5': '1.25rem',

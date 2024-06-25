@@ -1,6 +1,5 @@
-import React from "react";
 import { MdOutlineSecurity } from "react-icons/md";
-import logo from "../assets/logo.png";
+
 
 const Services = () => {
   const services = [

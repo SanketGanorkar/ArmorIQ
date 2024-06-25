@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../assets/Company.png"; 
+import logo from "../assets/Company.png";
 
 const Navbar = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
@@ -10,37 +9,19 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center px-4">
-        <img src={logo} alt="Company Logo" className="h-[130px] ml-0 mr-auto sm:ml-0" />
+        <img
+          src={logo}
+          alt="Company Logo"
+          className="h-[130px] ml-0 mr-auto sm:ml-0"
+        />
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
           <li className="mr-6 mb-3 font-bold">HOME</li>
           <li className="mr-6 mb-3 font-bold">ABOUT US</li>
-          <li className="relative group mr-4 mb-3 font-bold">
-            SERVICES
-            <ul className="absolute left-0 hidden mt-2 bg-[#000000] text-white group-hover:block">
-              <li className="px-4 py-2 hover:bg-gray-700">Service 1</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Service 2</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Service 3</li>
-            </ul>
-          </li>
-          <li className="relative group mr-6 mb-3 font-bold">
-            PAGE
-            <ul className="absolute left-0 hidden mt-2 bg-[#000000] text-white group-hover:block">
-              <li className="px-4 py-2 hover:bg-gray-700">Page 1</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Page 2</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Page 3</li>
-            </ul>
-          </li>
-          <li className="relative group mr-6 mb-3 font-bold">
-            BLOG
-            <ul className="absolute left-0 hidden mt-2 bg-[#000000] text-white group-hover:block">
-              <li className="px-4 py-2 hover:bg-gray-700">Blog 1</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Blog 2</li>
-              <li className="px-4 py-2 hover:bg-gray-700">Blog 3</li>
-            </ul>
-          </li>
+          <li className="relative group mr-4 mb-3 font-bold">SERVICES</li>
+          <li className="relative group mr-6 mb-3 font-bold">TEAM</li>
+          <li className="relative group mr-6 mb-3 font-bold">BLOG</li>
           <li className="mr-6 mb-3 font-bold">CONTACT</li>
         </ul>
-        <FaSearch color="white" className="mr-6 mb-2 sm:block sm:h-6 sm:w-6 max-sm:h-6 max-sm:w-6" />
         <IoMdMenu
           color="white"
           size={25}

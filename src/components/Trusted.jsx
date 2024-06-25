@@ -1,10 +1,10 @@
 
-import Cashmap from '../assets/Cashmap.jpg';
-import FoodIn from '../assets/FoodIn.jpg';
-import Moneytalk from '../assets/Moneytalk.jpg';
-import Naviti from '../assets/Naviti.jpg';
-import Nudgebee from '../assets/nudgebee.jpg';
-import Suzie from '../assets/Suzie.jpg'; // Assuming security.jpg is Suzie's logo
+import Cashmap from '../assets/Cashmap.png';
+import FoodIn from '../assets/FoodIn.png';
+import Moneytalk from '../assets/Moneytalk.png';
+import Naviti from '../assets/Naviti.png';
+import Nudgebee from '../assets/nudgebee.png';
+import Suzie from '../assets/Suzie.png'; // Assuming security.jpg is Suzie's logo
 
 const Trusted = () => {
   return (

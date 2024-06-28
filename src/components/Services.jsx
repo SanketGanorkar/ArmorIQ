@@ -1,106 +1,137 @@
-import { MdOutlineSecurity } from "react-icons/md";
-
+import { useState } from "react";
+import { MdOutlineSecurity, MdCloudDone } from "react-icons/md";
+import { TbNetwork } from "react-icons/tb";
+import { AiOutlineAudit } from "react-icons/ai";
+import { GrShieldSecurity } from "react-icons/gr";
+import { RiComputerLine } from "react-icons/ri";
+import Modal from "./Modals.jsx"; 
 
 const Services = () => {
+  const [selectedService, setSelectedService] = useState(null);
+
   const services = [
     {
       id: 1,
-      logo: <MdOutlineSecurity color="white" />,
+      logo: <MdCloudDone color="white" />,
       title: "Cloud Security",
-      desc: "Lorem ipsum dolor, sit amet consectetur",
+      desc: [
+        "Configuration Audit (AWS, Azure, Google and Other SaaS products)",
+        "Mobile Security",
+        "Mobile Application Penetration Test",
+        "Source Code Review",
+        "Application Security",
+        "Application Security Testing",
+        "Source Code Review",
+        "Application Security Architecture Review",
+        "Secure Software Development Lifecycle Review",
+      ],
     },
     {
       id: 2,
       logo: <MdOutlineSecurity color="white" />,
       title: "Mobile Security",
-      desc: "Lorem ipsum dolor, sit amet consectetur",
+      desc: [
+        "Mobile Application Penetration Test",
+        "Source Code Review",
+        "Application Security",
+        "Application Security Testing",
+      ],
     },
     {
       id: 3,
-      logo: <MdOutlineSecurity color="white" />,
+      logo: <RiComputerLine color="white" />,
       title: "Application Security",
-      desc: "Lorem ipsum dolor sit amet.",
+      desc: [
+        "Application Security Architecture Review",
+        "Secure Software Development Lifecycle Review",
+      ],
     },
     {
       id: 4,
-      logo: <MdOutlineSecurity color="white" />,
+      logo: <TbNetwork color="white" />,
       title: "Network Security",
-      desc: "Lorem ipsum dolor, sit amet consectetur.",
+      desc: [
+        "Network Vulnerability Assessment",
+        "Network Penetration Testing",
+        "Configuration Audit",
+        "Network Architecture Security Review",
+        "Wireless Penetration Testing",
+        "Firewall Rule Review",
+      ],
     },
     {
       id: 5,
-      logo: <MdOutlineSecurity color="white" />,
-      title: "Endpoint Security",
-      desc: "Lorem ipsum dolor, sit amet consectetur.",
+      logo: <AiOutlineAudit color="white" />,
+      title: "Audit & Compliance",
+      desc: [
+        "Information Security Audit",
+        "Risk Management Program",
+        "Third Party Risk Management",
+        "ISO 27001 Implementation & Sustenance",
+        "Threat Assessment & Risk Analysis",
+        "Written Information Security Policy",
+        "Written Incident Response Procedure",
+        "Written Third Party Risk Management Program",
+        "Business Process Control Assessment",
+        "NIST and CIS Controls Framework Alignment",
+        "Regulatory Compliance Assistance",
+        "Cyber Security Assessment for Mergers & Acquisitions (M&A)",
+      ],
     },
     {
       id: 6,
+      logo: <GrShieldSecurity color="white" />,
+      title: "Special Security Services",
+      desc: [
+        "Red Team Services",
+        "Blue Team Services",
+        "Dark & Deep Web Analysis Services",
+        "SOC & Global Threat Management Services",
+        "SOC as a Service",
+        "Digital Forensics & Security Incident Response",
+        "Security Advisory Services",
+        "Tabletop Exercise",
+      ],
+    },
+    {
+      id: 7,
       logo: <MdOutlineSecurity color="white" />,
-      title: "Identity & Access Management",
-      desc: "Lorem ipsum dolor, sit amet consectetur.",
+      title: "SOC & Management Services",
+      desc: [
+        "SOC & Global Threat Management Services",
+        "SOC as a Service",
+        "Digital Forensics & Security Incident Response",
+        "Security Advisory Services",
+      ],
     },
   ];
 
   return (
-    <div>
-      <div className="bg-[#262626] flex flex-col items-center max-md:px-2 py-12">
-        <h2 className="text-[#004bae] font-bold">SERVICES</h2>
-        <h2 className="text-white font-semibold text-3xl">What We Do</h2>
-        <p className="text-white pt-3 text-center">
-          Enhancing Organizational Cybersecurity Through Comprehensive Services
-        </p>
-        <div className="relative w-full max-w-4xl mt-8">
-          <div className="absolute left-1/2 w-0.5 bg-white h-full transform -translate-x-1/2"></div>
-          {services.map((service, index) => (
-            <div
-              key={service.id}
-              className={`relative flex flex-col items-center mb-12 w-full md:w-1/2 ${
-                index % 2 === 0 ? "ml-auto pr-4" : "mr-auto pl-4"
-              }`}
-              style={{
-                transform: index % 2 === 0 ? 'translateX(-50%)' : 'translateX(50%)'
-              }}
-            >
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-                <div className="text-4xl mb-2">{service.logo}</div>
-                <h3 className="text-white font-semibold text-xl">{service.title}</h3>
-                <p className="text-white mt-2">{service.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div id="services" className="bg-[#000000]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10 mt-[60px]">
+        {services.map((item) => (
+          <div
+            key={item.id}
+            className="bg-[#262626] text-white p-6 rounded-lg flex flex-col items-center border-[#004bae] border-[1px] hover:bg-[#1d1c1c] w-full h-auto cursor-pointer  md:mt-0"
+            onClick={() => setSelectedService(item)}
+          >
+            <div className="text-4xl mb-4">{item.logo}</div>
+            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <ul className="text-center text-[17px] list-disc list-inside">
+              {item.desc.slice(0, 3).map((point, index) => (
+                <li key={index} className="mb-2">{point}</li>
+              ))}
+              {item.desc.length > 3 && (
+                <li className="text-blue-500">...click to read more</li>
+              )}
+            </ul>
+          </div>
+        ))}
       </div>
+      {selectedService && (
+        <Modal service={selectedService} onClose={() => setSelectedService(null)} />
+      )}
       {/* Footer section */}
-      <div className="bg-[#004bae] min-h-[100px] lg:h-[150px] flex items-center justify-center">
-        <div className="flex flex-row items-center justify-center py-4 gap-x-14 gap-y-4 lg:gap-24 flex-wrap">
-          <div className="flex flex-col items-center">
-            <h2 className="text-white text-2xl lg:text-4xl font-bold">2500+</h2>
-            <h4 className="font-semibold text-[20px]">Cyber Projects</h4>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="text-white text-2xl lg:text-4xl font-bold ml-11">
-              1800+
-            </h2>
-            <h4 className="font-semibold text-[20px] ml-3">
-              Client Production
-            </h4>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="text-white text-2xl lg:text-4xl font-bold ml-[60px]">
-              100%
-            </h2>
-            <h4 className="font-semibold text-[20px] ml-3">
-              Services Guaranteed
-            </h4>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="text-white text-2xl lg:text-4xl font-bold ml-9">
-              50+
-            </h2>
-            <h4 className="font-semibold text-[20px] ml-3">Team Expert</h4>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

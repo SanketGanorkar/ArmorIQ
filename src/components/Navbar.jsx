@@ -2,10 +2,18 @@ import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../assets/Company.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const [visibleMenu, setVisibleMenu] = useState(false);
 
+  const navigate = useNavigate();
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-10 flex flex-row bg-[#000000] h-[70px] items-center px-4">
@@ -15,12 +23,42 @@ const Navbar = () => {
           className="h-[130px] ml-0 mr-auto sm:ml-0"
         />
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
-          <li className="mr-6 mb-3 font-bold">HOME</li>
-          <li className="mr-6 mb-3 font-bold">ABOUT US</li>
-          <li className="relative group mr-4 mb-3 font-bold">SERVICES</li>
-          <li className="relative group mr-6 mb-3 font-bold">TEAM</li>
-          <li className="relative group mr-6 mb-3 font-bold">BLOG</li>
-          <li className="mr-6 mb-3 font-bold">CONTACT</li>
+          <li
+            className="mr-6 mb-3 font-bold cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
+            HOME
+          </li>
+          <li
+            className="mr-6 mb-3 font-bold cursor-pointer"
+            onClick={() => navigate("/ArmorIQ/about")}
+          >
+            ABOUT US
+          </li>
+          <li
+            className="relative group mr-4 mb-3 font-bold cursor-pointer"
+            onClick={() => navigate("/ArmorIQ/services")}
+          >
+            SERVICES
+          </li>
+          <li
+            className="relative group mr-6 mb-3 font-bold cursor-pointer"
+            onClick={() => scrollToSection("team")}
+          >
+            TEAM
+          </li>
+          <li
+            className="relative group mr-6 mb-3 font-bold cursor-pointer"
+            onClick={() => scrollToSection("blog")}
+          >
+            BLOG
+          </li>
+          <li
+            className="mr-6 mb-3 font-bold cursor-pointer"
+            onClick={() => scrollToSection("contact")}
+          >
+            CONTACT
+          </li>
         </ul>
         <IoMdMenu
           color="white"

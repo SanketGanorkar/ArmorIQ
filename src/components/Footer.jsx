@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="pt-2 px-2 pb-2 flex justify-center items-center bg-[#000000] text-white min-h-[40px] text-center">
-        Copyright 2024 © All Rights Reserved | Design by Bruce Wayne
+        Copyright 2024 © All Rights Reserved | Design by ArmorIQ
       </p>
     </div>
   );

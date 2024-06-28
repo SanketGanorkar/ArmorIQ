@@ -26,7 +26,7 @@ const Trusted = () => {
           <br />satisfaction in our partnership.
         </div>
       </div>
-      <div className="text-white pt-10 lg:pt-0 lg:pl-10 max-lg:flex max-lg:flex-wrap max-lg:justify-center items-center">
+      <div className="text-white pt-10 lg:pt-0 lg:pl-10 max-lg:flex max-lg:flex-wrap max-lg:justify-center items-center mt-8">
         <div className="flex flex-row lg:pb-5 ">
           <img src={Cashmap} className="w-28 h-28 m-1 animate-bounce rounded-full" alt="Cashmap" />
           <img src={FoodIn} className="w-28 h-28 m-1 animate-bounce rounded-full" alt="FoodIn" />

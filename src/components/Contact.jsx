@@ -4,20 +4,13 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="flex bg-[#000000] justify-center">
+    <div className="flex bg-[#000000] justify-center" id="contact">
       <div className="flex flex-row py-6 max-lg:px-6 max-lg:gap-8 max-md:flex-col">
         <div className="lg:ml-[50px]">
           <h3 className="ml-3 mb-1 text-[#004bae] font-bold">CONTACT US</h3>
           <h2 className="ml-3 mt-1 text-white text-3xl font-bold">
             Contact Information
           </h2>
-          <p className="text-white mt-3 ml-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            <br />
-            necessitatibus numquam et doloremque repellat eligendi, vero
-            <br />
-            perferendis magnam iusto voluptas, ullam assumenda sint!
-          </p>
           <div className="flex flex-row">
             <CiLocationOn color="#004bae" className="ml-3 mt-4" size={40} />
             <div className="flex flex-col">
@@ -39,7 +32,7 @@ const Contact = () => {
             <MdOutlineEmail color="#004bae" className="ml-3 mt-4" size={40} />
             <div className="flex flex-col">
               <h3 className=" ml-3 mt-3 font-bold text-white">Our Mail</h3>
-              <h5 className="text-white ml-3">hello@gmail.com</h5>
+              <h5 className="text-white ml-3">armoriq123@gmail.com</h5>
             </div>
           </div>
         </div>
@@ -58,7 +51,7 @@ const Contact = () => {
             <input
               type="email"
               placeholder="Your Mail"
-              className="text-white w-[50%] p-3 border-[#004bae] border-[1px] w-full bg-[#000000]"
+              className="text-white w-[50%] p-3 border-[#004bae] border-[1px]  bg-[#000000]"
             />
           </div>
           <input

@@ -2,26 +2,25 @@ import { GrDocumentVerified } from "react-icons/gr";
 
 const Trail = () => {
   return (
-    <div className="bg-innovation bg-cover bg-center h-[350px]">
+    <div className="bg-security bg-center h-[350px]">
       <div className="lg:pl-[110px]">
-        <div className="bg-[#000000] text-white h-[400px] w-[350px]">
-          <div className="font-bold text-2xl pl-[38px] pt-[40px]  ">
-            Still Confused
+        <div className="bg-[#000000] text-white h-[390px] w-[350px]">
+          <div className="font-bold text-2xl pl-[38px] pt-[40px]">
+            Strengthen Your
             <br />
-            About Our
+            Cyber Defenses.
             <br />
-            Features? Get A
+            Book a Free
             <br />
-            Free Trial 7 Days
+            Consultation Call !
           </div>
           <div className="mb-[30px]">
             <div className="mb-1 ml-9 mt-4  ">
-              Lorem, ipsum dolor sit amet consectetur
-              <br />
-              adipisicing elit.Quisquam exercitationem
+              Let us help you identify and mitigate risks with a
+              personalized security assessment from our professionals.
             </div>
             <button className="flex flex-row font-bold bg-[#004bae] text-white p-3 ml-[38px] mt-5">
-              <GrDocumentVerified className="mt-1 mr-2" /> GET FREE TRIAL
+              <GrDocumentVerified className="mt-1 mr-2" /> BOOK A FREE CALL
             </button>
           </div>
         </div>

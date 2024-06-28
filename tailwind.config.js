@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         'innovation': "url('/src/assets/Innovation.jpg')",
         'security': "url('/src/assets/security.jpg')",
-        'tech': "url('/src/assets/tech.jpg')"
+        'tech': "url('/src/assets/tech.jpg')",
       },
       animation: {
         bounce: 'bounce 5s infinite',

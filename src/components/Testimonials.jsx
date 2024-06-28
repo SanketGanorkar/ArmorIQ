@@ -1,27 +1,27 @@
 import { FaStar } from "react-icons/fa";
-import pfp from "../assets/pfp.jpg";
+import user from "../assets/user-Photoroom.png";
 const Testimonials = () => {
   const arr = [
     {
       id: 1,
-      desc: "Lorem ipsum, dolor sit amet consectetur, Asperiores magni eum quasi corporis labore, sequi facere repudiandae.?",
-      img: pfp,
-      name: "Tony Stark",
-      desig: "Iron Man",
+      desc: "Dedicated to improving user experience, specializing in modern UI/UX design, and creating intuitive interfaces.",
+      img: user,
+      name: "Henry Ford",
+      desig: "Sales Executive",
     },
     {
       id: 2,
-      desc: "Lorem ipsum, dolor sit amet consectetur, Asperiores magni eum quasi corporis labore, sequi facere repudiandae.?",
-      img: pfp,
-      name: "Thor",
-      desig: "Strongest Avenger",
+      desc: "Expert in full-stack development, with a passion for building scalable applications and optimizing performance.",
+      img: user,
+      name: "Edward Kent",
+      desig: "Senior Developer",
     },
     {
       id: 3,
-      desc: "Lorem ipsum, dolor sit amet consectetur, Asperiores magni eum quasi corporis labore, sequi facere repudiandae.?",
-      img: pfp,
-      name: "Steve Rogers",
-      desig: "Captain America",
+      desc: "Oversees project management and ensures alignment with strategic goals, fostering a collaborative environment.",
+      img: user,
+      name: "Jane Maxwell",
+      desig: "Assitant Director",
     },
   ];
   return (
@@ -33,10 +33,10 @@ const Testimonials = () => {
               TESTIMONIALS
             </h5>
             <h2 className="font-bold text-3xl mt-3">What Client Says About Us</h2>
-            <p className="text-[15px] mt-3">
+            {/* <p className="text-[15px] mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
               doloremque perferendis quis!
-            </p>
+            </p> */}
           </div>
           <div>
             <button className="bg-[#004bae] w-[8rem] text-white p-2 font-semibold mt-4 sm:mt-[105px] md:ml-[5rem] lg:ml-[290px] cursor-pointer">

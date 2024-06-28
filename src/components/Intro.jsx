@@ -33,10 +33,10 @@ const Intro = () => {
 
   return (
     <div className="bg-tech bg-cover bg-center flex flex-col">
-      <div className="flex flex-row justify-between mx-4 sm:mx-[8%]">
+      <div className="flex flex-row justify-between mx-4 sm:mx-[8%] max-sm:flex-col">
         {/* Left Section */}
         <div className="flex flex-col mt-[120px]">
-          <h2 className="text-[#004bae] font-bold ">
+          <h2 className="text-[#004bae] font-bold text-nowrap">
             DEMOCRATIZING CYBERSECURITY
           </h2>
           <h2 className="text-white font-bold text-3xl max-sm:text-[11px]">
@@ -64,12 +64,12 @@ const Intro = () => {
         </div>
         {/* Right Section */}
         <div className="flex flex-wrap  sm:flex-col sm:items-center">
-          <div className="flex flex-col text-right">
-            <div className="flex flex-col mt-[120px]">
+          <div className="flex flex-col text-right max-sm:text-left">
+            <div className="flex flex-col sm:pl-[50px] mt-[30px] sm:mt-[120px]">
               <h2 className="text-white font-bold text-5xl max-sm:text-3xl">
                 50 +
               </h2>
-              <h2 className="text-white font-bold pt-3">
+              <h2 className="text-white font-bold pt-1">
                 Cyber Security Project
               </h2>
               <p className="text-white">
@@ -82,14 +82,14 @@ const Intro = () => {
                 of mind in an increasingly complex digital landscape.
               </p>
             </div>
-            <div className="flex flex-col">
-              <h2 className="text-white font-bold text-3xl pt-5 pl-[75px]">
+            <div className="flex flex-col ">
+              <h2 className="text-white font-bold text-3xl pt-5 sm:pl-[75px]">
                 100 %
               </h2>
-              <h2 className="text-white font-bold pl-[50px]">
+              <h2 className="text-white font-bold sm:pl-[50px]">
                 Customer Satisfaction
               </h2>
-              <p className="text-white pl-3">
+              <p className="text-white sm:pl-3">
                 Our unwavering focus on quality, reliability, and proactive
                 <br />
                 support enables us to maintain an exceptional level of
@@ -119,7 +119,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="bg-[#004bae] min-h-[100px] lg:h-[150px] flex items-center justify-center md:flex md:flex-col md:items-center md:gap-y-4">
-        <div className="flex flex-row items-center justify-center py-4 gap-x-14 gap-y-4 lg:gap-24 flex-wrap">
+        <div className="flex flex-row items-center justify-center py-4 gap-x-14 gap-y-4 lg:gap-24 flex-wrap max-md:grid max-md:grid-rows-2">
           <div className="flex flex-col items-center">
             <CountUp
               delay={2}

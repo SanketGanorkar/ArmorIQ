@@ -25,7 +25,10 @@ const Navbar = () => {
         <ul className="flex flex-row max-sm:hidden items-center text-white list-none ml-auto">
           <li
             className="mr-6 mb-3 font-bold cursor-pointer"
-            onClick={() => scrollToSection("home")}
+            onClick={() => {
+              navigate("/ArmorIQ");
+              scrollToSection("home");
+            }}
           >
             HOME
           </li>
@@ -43,19 +46,28 @@ const Navbar = () => {
           </li>
           <li
             className="relative group mr-6 mb-3 font-bold cursor-pointer"
-            onClick={() => scrollToSection("team")}
+            onClick={() => {
+              navigate("/ArmorIQ");
+              scrollToSection("team");
+            }}
           >
             TEAM
           </li>
           <li
             className="relative group mr-6 mb-3 font-bold cursor-pointer"
-            onClick={() => scrollToSection("blog")}
+            onClick={() => {
+              navigate("/ArmorIQ");
+              scrollToSection("blog");
+            }}
           >
             BLOG
           </li>
           <li
             className="mr-6 mb-3 font-bold cursor-pointer"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => {
+              navigate("/ArmorIQ");
+              scrollToSection("contact");
+            }}
           >
             CONTACT
           </li>
@@ -76,12 +88,54 @@ const Navbar = () => {
             onClick={() => setVisibleMenu(false)}
           />
           <ul className="text-white absolute top-14 right-4 text-right text-2xl flex flex-col gap-4">
-            <li onClick={() => setVisibleMenu(false)}>HOME</li>
-            <li onClick={() => setVisibleMenu(false)}>ABOUT US</li>
-            <li onClick={() => setVisibleMenu(false)}>SERVICES</li>
-            <li onClick={() => setVisibleMenu(false)}>PAGE</li>
-            <li onClick={() => setVisibleMenu(false)}>BLOG</li>
-            <li onClick={() => setVisibleMenu(false)}>CONTACT</li>
+            <li onClick={() => {
+                navigate("/ArmorIQ");
+                scrollToSection("home");
+                setVisibleMenu(false);
+              }}>HOME</li>
+            <li
+              onClick={() => {
+                navigate("/ArmorIQ/about");
+                setVisibleMenu(false);
+              }}
+            >
+              ABOUT US
+            </li>
+            <li
+              onClick={() => {
+                navigate("/ArmorIQ/services");
+                setVisibleMenu(false);
+              }}
+            >
+              SERVICES
+            </li>
+            <li
+              onClick={() => {
+                navigate("/ArmorIQ");
+                scrollToSection("team");
+                setVisibleMenu(false);
+              }}
+            >
+              TEAM
+            </li>
+            <li
+              onClick={() => {
+                navigate("/ArmorIQ");
+                scrollToSection("blog");
+                setVisibleMenu(false);
+              }}
+            >
+              BLOG
+            </li>
+            <li
+              onClick={() => {
+                navigate("/ArmorIQ");
+                scrollToSection("contact");
+                setVisibleMenu(false);
+              }}
+            >
+              CONTACT
+            </li>
           </ul>
         </div>
       )}

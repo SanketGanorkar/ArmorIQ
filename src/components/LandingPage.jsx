@@ -1,5 +1,4 @@
 import Footer from "./Footer.jsx";
-import Navbar from "./Navbar.jsx";
 import Trial from "./Trial.jsx";
 import Trusted from "./Trusted.jsx";
 import Contact from "./Contact.jsx";
@@ -12,7 +11,6 @@ const LandingPage = () => {
   return (
     <>
       <div id="home">
-        <Navbar />
         <Intro />
         <Trusted />
         <Trial />

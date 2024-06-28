@@ -2,9 +2,9 @@ import { GrDocumentVerified } from "react-icons/gr";
 
 const Trail = () => {
   return (
-    <div className="bg-security bg-center h-[350px]">
+    <div className="bg-security bg-cover bg-center h-[350px]">
       <div className="lg:pl-[110px]">
-        <div className="bg-[#000000] text-white h-[390px] w-[350px]">
+        <div className="bg-[#000000] text-white h-[390px] w-[350px] ml-[55px]">
           <div className="font-bold text-2xl pl-[38px] pt-[40px]">
             Strengthen Your
             <br />

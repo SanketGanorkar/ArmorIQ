@@ -2,7 +2,8 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { FaUserCog } from "react-icons/fa";
 import { MdAccessibility } from "react-icons/md";
 import { FaDollarSign } from "react-icons/fa";
-import CountUp from "react-countup";  
+import CountUp from "react-countup";
+
 const Intro = () => {
   const arr = [
     {
@@ -43,15 +44,21 @@ const Intro = () => {
             ASSESS → DEFEND → SECURE
           </h2>
           <p className="text-white mt-8">
-          Tailored services are designed to meet the specific 
-          <br />needs of diverse clients, from small startups to large 
-          <br />enterprises. By leveraging cutting-edge technology 
-          <br />and innovative strategies, we empower you to defend 
-          <br />against threats with the same level of security as the 
-          <br />biggest players in the industry.
+            Tailored services are designed to meet the specific
+            <span className="hidden sm:inline"></span>
+            needs of diverse clients, from small startups to large
+            <span className="hidden sm:inline"></span>
+            enterprises. By leveraging cutting-edge technology
+            <span className="hidden sm:inline"></span>
+            and innovative strategies, we empower you to defend
+            <span className="hidden sm:inline"></span>
+            against threats with the same level of security as the
+            <span className="hidden sm:inline"></span>
+            biggest players in the industry.
           </p>
-          <div className="flex flex-col mt-9 sm:flex-row">
-            <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer">
+
+          <div className="flex flex-col mt-9 sm:flex-row sm:mt-16">
+            <button className="bg-[#004bae] text-white font-bold p-3 text-[15px] cursor-pointer w-2/5">
               LEARN MORE
             </button>
             <div className="flex flex-row sm:flex-col sm:ml-8 max-sm:mt-2 max-sm:gap-2">
@@ -63,7 +70,7 @@ const Intro = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="flex flex-wrap  sm:flex-col sm:items-center">
+        <div className="flex flex-wrap sm:flex-col sm:items-center">
           <div className="flex flex-col text-right max-sm:text-left">
             <div className="flex flex-col sm:pl-[50px] mt-[30px] sm:mt-[120px]">
               <h2 className="text-white font-bold text-5xl max-sm:text-3xl">
@@ -74,29 +81,26 @@ const Intro = () => {
               </h2>
               <p className="text-white">
                 Our track record reflects our commitment to delivering
-                <br />
+                <span className="hidden sm:inline"></span>
                 effective cybersecurity solutions tailored to the unique
-                <br />
+                <span className="hidden sm:inline"></span>
                 needs of each client, ensuring robust protection and peace
-                <br />
+                <span className="hidden sm:inline"></span>
                 of mind in an increasingly complex digital landscape.
               </p>
             </div>
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <h2 className="text-white font-bold text-3xl pt-5 sm:pl-[75px]">
                 100 %
               </h2>
               <h2 className="text-white font-bold sm:pl-[50px]">
                 Customer Satisfaction
               </h2>
-              <p className="text-white sm:pl-3">
+              <p className="text-white sm:leading-relaxed sm:pl-3">
                 Our unwavering focus on quality, reliability, and proactive
-                <br />
                 support enables us to maintain an exceptional level of
-                satisfaction and
-                <br />
-                fostering long-lasting partnerships built on trust and mutual
-                success.
+                satisfaction and fostering long-lasting partnerships built on
+                trust and mutual success.
               </p>
             </div>
           </div>
@@ -173,4 +177,5 @@ const Intro = () => {
     </div>
   );
 };
+
 export default Intro;
